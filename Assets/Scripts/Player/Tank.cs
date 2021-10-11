@@ -6,12 +6,13 @@ public class Tank : MonoBehaviour
 {
     [SerializeField] private Rigidbody rigidbody;
     [SerializeField] private float speed;
+    [SerializeField] private float maxSpeed;
     [SerializeField] private float rotate;
 
     // Start is called before the first frame update
     void Start()
     {
-        rigidbody.centerOfMass = new Vector3(0, -1, 0);
+        rigidbody.centerOfMass = new Vector3(0, -1.5f, 0);
     }
 
     // Update is called once per frame
@@ -39,5 +40,7 @@ public class Tank : MonoBehaviour
         {
             rigidbody.AddTorque(transform.up * rotate, ForceMode.Acceleration);
         }
+
+        rigidbody.velocity = Vector3.ClampMagnitude(rigidbody.velocity, maxSpeed);
     }
 }
