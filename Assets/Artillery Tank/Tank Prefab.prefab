@@ -5721,9 +5721,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   rigidbody: {fileID: 1750851944}
-  speed: 15
-  maxSpeed: 20
-  rotate: 10
+  speed: 5
+  maxSpeed: 10
+  rotate: 3
   projectile: {fileID: 4954651216918481662, guid: fb6e2668e94cc884d8ecbb4437e8230e, type: 3}
   firepoint: {fileID: 4252226600963000603}
 --- !u!1 &1226052184545614
