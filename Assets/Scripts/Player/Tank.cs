@@ -8,6 +8,8 @@ public class Tank : MonoBehaviour
     [SerializeField] private float speed;
     [SerializeField] private float maxSpeed;
     [SerializeField] private float rotate;
+    [SerializeField] private GameObject projectile;
+    [SerializeField] private Transform firepoint;
 
     // Start is called before the first frame update
     void Start()
@@ -42,5 +44,11 @@ public class Tank : MonoBehaviour
         }
 
         rigidbody.velocity = Vector3.ClampMagnitude(rigidbody.velocity, maxSpeed);
+
+        if (Input.GetKeyDown(KeyCode.Space))
+        {
+            Quaternion rotation = Quaternion.Euler(firepoint.rotation.eulerAngles.x, transform.rotation.eulerAngles.y, transform.rotation.eulerAngles.z);
+            Instantiate(projectile, firepoint.position, rotation);
+        }
     }
 }

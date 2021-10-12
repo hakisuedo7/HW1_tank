@@ -56,9 +56,10 @@
     <Compile Include="Assets\Scripts\Player\SwitchCamera.cs" />
     <Compile Include="Assets\Artillery Tank\Demo Scene\CameraController.cs" />
     <Compile Include="Assets\Scripts\Controller\GameController.cs" />
+    <Compile Include="Assets\Scripts\Minimap.cs" />
     <Compile Include="Assets\Scripts\Player\Tank.cs" />
     <Compile Include="Assets\Scripts\Controller\SceneController.cs" />
-    <Compile Include="Assets\Scripts\Minimap.cs" />
+    <Compile Include="Assets\Scripts\Player\Projectile.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\Stylized Nature Environment\ReadMe.txt" />
