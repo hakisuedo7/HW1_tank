@@ -54,6 +54,7 @@
   </PropertyGroup>
   <ItemGroup>
     <Compile Include="Assets\Scripts\Player\Projectile.cs" />
+    <Compile Include="Assets\Scripts\Controller\MenuController.cs" />
     <Compile Include="Assets\Scripts\Player\SwitchCamera.cs" />
     <Compile Include="Assets\Artillery Tank\Demo Scene\CameraController.cs" />
     <Compile Include="Assets\Scripts\Controller\GameController.cs" />
@@ -61,7 +62,8 @@
     <Compile Include="Assets\Scripts\Controller\PauseMenu.cs" />
     <Compile Include="Assets\Scripts\Player\Tank.cs" />
     <Compile Include="Assets\Scripts\Controller\SceneController.cs" />
-    <Compile Include="Assets\Scripts\Controller\MenuController.cs" />
+    <Compile Include="Assets\Scripts\Target\Target.cs" />
+    <Compile Include="Assets\Scripts\Timer.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />

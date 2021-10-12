@@ -2,17 +2,22 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 
 public class GameController : MonoBehaviour
 {
     [SerializeField] private GameObject PauseMenu;
+    [SerializeField] private Text ScoreText;
     private bool GameIsPause;
+    private int score;
 
     // Start is called before the first frame update
     void Start()
     {
         PauseMenu.SetActive(false);
         GameIsPause = false;
+        score = 0;
+        RefreshScore();
     }
 
     // Update is called once per frame
@@ -51,5 +56,16 @@ public class GameController : MonoBehaviour
     public void Restart()
     {
         SceneManager.LoadScene("scenario");
+    }
+
+    public void addScore(int sc)
+    {
+        score += sc;
+        RefreshScore();
+    }
+
+    void RefreshScore()
+    {
+        ScoreText.text = "Score: " + score;
     }
 }

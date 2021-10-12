@@ -96,6 +96,7 @@ GameObject:
   - component: {fileID: 8751870122485497836}
   - component: {fileID: 8751870122485497835}
   - component: {fileID: 8751870122485497824}
+  - component: {fileID: 3348907384951315882}
   m_Layer: 8
   m_Name: Target
   m_TagString: Target
@@ -258,3 +259,15 @@ Light:
   m_UseViewFrustumForShadowCasterCull: 1
   m_ShadowRadius: 0
   m_ShadowAngle: 0
+--- !u!114 &3348907384951315882
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8751870122485497834}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8532386d49124864b9a34ac9914806f6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
